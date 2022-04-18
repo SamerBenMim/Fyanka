@@ -1,0 +1,21 @@
+[{
+        "title": "Télécharger l'application",
+        "content": "Télécharger FYANKA a travers ( play store ou apple store )",
+        "image": "download"
+    },
+    {
+        "title": "Créér un compte",
+        "content": "Créer un compte Fyanka et se connecter",
+        "image": "account"
+    },
+    {
+        "title": "Fixer un budget",
+        "content": "Choisir l'option qui vous convient la plus selon les gammes disponible ou contacter le service client pour faciliter la tâche",
+        "image": "choose"
+    },
+    {
+        "title": "Confirmer votre choix",
+        "content": "Recevoir un appel téléphonique de la part de nos agents pour confirmer votre choix",
+        "image": "confirm"
+    }
+]

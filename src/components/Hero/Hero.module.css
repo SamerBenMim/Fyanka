@@ -1,0 +1,29 @@
+.heroContainer {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    min-height: calc( 100vh - 70px);
+    padding: 0px 100px;
+    overflow: hidden;
+}
+
+.animate {
+    animation: fadein .5s ease-in;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .heroContainer {
+        display: flex;
+        flex-direction: column;
+        height: unset;
+        padding: 0px 50px;
+    }
+}

@@ -1,0 +1,79 @@
+.heroImageContainer {
+    position: relative;
+    animation: appear 0.5s ease-in;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.heroImageContainer .blob {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 25%;
+    max-width: 100%;
+    text-align: center;
+    width: auto;
+    height: auto;
+    max-height: 65%;
+    z-index: 1;
+}
+
+.heroImageContainer .married {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 4.5%;
+    right: 0;
+    top: 0vh;
+    text-align: center;
+    width: auto;
+    max-width: 60%;
+    height: auto;
+    min-height: 85%;
+    z-index: 5;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .heroImageContainer {
+        position: relative;
+        height: 600px;
+        margin-top: 50px
+    }
+    .heroImageContainer .married {
+        min-height: 60%;
+        max-width: 60%;
+    }
+    .heroImageContainer .blob {
+        right: 0;
+        top: 25%;
+        min-width: 60%;
+        width: auto;
+        height: auto;
+        min-height: 55%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heroImageContainer .married {
+        min-height: 60%;
+        max-width: 70%;
+    }
+    .heroImageContainer .blob {
+        right: 0;
+        top: 10%;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+        min-height: 65%
+    }
+}

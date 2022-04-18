@@ -1,0 +1,41 @@
+.btn {
+    padding: calc(15px + 0.5vmin);
+    font-size: calc(20px + 0.5vmin);
+    font-weight: 700;
+    color: white;
+    background-color: #EF9F99;
+    border: #EF9F99 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btnContainer {
+    position: relative;
+    display: flex;
+    display: inline-block;
+}
+
+.btnBorder {
+    padding: calc(15px + 0.5vmin);
+    font-size: calc(20px + 0.5vmin);
+    font-weight: 700;
+    color: transparent;
+    border: #EF9F99 2px solid;
+    background-color: transparent;
+    border-radius: 15px;
+    transform: translate(calc(5px + 0.5vmin), calc(5px + 0.5vmin));
+    z-index: -1;
+    position: absolute;
+}
+
+.btnContainer:hover .btn {
+    transform: translate(calc(5px + 0.5vmin), calc(5px + 0.5vmin));
+    transition: transform .5s ease-in;
+}
+
+.btnContainer:active .btn {
+    transform: translate(calc(5px + 0.5vmin), calc(5px + 0.5vmin));
+    transition: transform .2s;
+    background-color: #cb7974;
+    border: #cb7974 2px solid;
+}

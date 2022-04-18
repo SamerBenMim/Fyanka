@@ -1,0 +1,68 @@
+.features {
+    margin-left: 100px;
+}
+
+.featureBox {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.featureContainer {
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5% 0%;
+}
+
+.featureDescription {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    color: #6C5E5D;
+}
+
+.featureDescription p {
+    font-size: calc(25px + 1vmin);
+    margin: auto;
+}
+
+.featureDescription.animate {
+    animation: appear 1s ease-in;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .features {
+        margin-left: 50px;
+    }
+    .featureBox {
+        margin: 50px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .featureDescription {
+        margin-top: 10px;
+        width: 90%;
+    }
+}

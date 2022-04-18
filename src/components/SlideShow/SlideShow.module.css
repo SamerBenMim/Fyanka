@@ -1,0 +1,155 @@
+.slideShow {
+    padding-top: 20px;
+    margin-left: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slideShow h2 {
+    color: #6C5E5D;
+    font-size: calc(25px + 1vmin);
+}
+
+.slideShow .step {
+    margin: auto;
+    font-size: calc(35px + 1vmin);
+}
+
+.slideShow .circles {
+    width: 3vw;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+}
+
+.slideShow .circle {
+    background-color: #FFDCD0;
+    min-width: 5px;
+    width: 40%;
+    height: 0;
+    padding-bottom: 40%;
+    border-radius: 50%;
+    margin: 25% 0;
+}
+
+.slideShow .circle.active {
+    background-color: #EF9F99
+}
+
+.slideShow .slides {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    pointer-events: none;
+}
+
+.slideShow .root {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.phone .background {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone .border {
+    position: absolute;
+    top: 0;
+    height: 90%;
+    z-index: 3;
+}
+
+.phone .background .content {
+    position: absolute;
+    top: 0;
+    margin-right: 5%;
+    height: 85%;
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate {
+    animation: fadein 1s ease-in;
+}
+
+@keyframes slideDown {
+    from {
+        top: -5%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.slideShow .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: slideDownTitle 1s ease-out;
+}
+
+.slideShow .description h3 {
+    color: #EF9F99;
+    font-size: calc(25px + 1vmin);
+    margin: 0;
+}
+
+@keyframes slideDownTitle {
+    from {
+        margin-top: -5%;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+.slideShow .description p {
+    color: #431805;
+    font-size: calc(20px + 1vmin);
+}
+
+.slideShow .description {
+    width: 60%;
+}
+
+.slideShow .next {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .slideShow {
+        margin-left: 50px;
+        height: unset;
+    }
+    .slideShow .step {
+        font-size: calc(10px + 1vmin);
+        margin: 10px 0px;
+    }
+    .slideShow .slides {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .slideShow .root {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

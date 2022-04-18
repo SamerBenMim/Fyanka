@@ -1,0 +1,19 @@
+.title {
+    color: #EF9F99;
+    font-size: calc(2em + 2vmin);
+    font-weight: 700;
+    width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 40px;
+        width: 100%;
+    }
+}

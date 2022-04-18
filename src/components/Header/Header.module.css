@@ -1,0 +1,27 @@
+.header h6 {
+    margin: 0;
+    padding: calc(2.5px + 0.25vmin);
+    color: #EF9F99;
+    font-size: calc(35px + 1vmin);
+    line-height: calc(30px + 1vmin);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    height: calc(35px + 1vmin);
+    padding: 50px 100px 0 100px;
+}
+
+.header img {
+    height: calc(35px + 1vmin);
+    padding-right: calc(30px + 1vmin);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        padding: 50px 50px 0 50px;
+    }
+}

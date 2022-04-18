@@ -1,0 +1,76 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #EFC7BE;
+    padding: 25px 100px;
+    color: white;
+}
+
+.footer .description {
+    width: 80%;
+}
+
+.footer h6 {
+    margin: 0;
+    padding: calc(2.5px + 0.25vmin);
+    font-size: calc(20px + 1vmin);
+    line-height: calc(15px + 1vmin);
+    vertical-align: middle;
+}
+
+.footer .company {
+    display: flex;
+    height: calc(20px + 1vmin);
+}
+
+.footer .download,
+.footer .contact,
+.footer .social,
+.footer .description {
+    margin: auto;
+}
+
+.footer .download .images {
+    display: flex;
+}
+
+.footer .download img {
+    width: 40%;
+    padding-right: 5%;
+}
+
+.footer .contact .con {
+    display: flex;
+    padding: 10px 0;
+}
+
+.footer .media {
+    display: flex;
+    gap: 10%;
+}
+
+.footer .contact .con h5 {
+    line-height: calc(15px + 1vmin);
+    font-size: calc(10px + 1vmin);
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .con img {
+    height: calc(15px + 1vmin);
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        padding-left: 50px;
+        grid-template-columns: 1fr;
+    }
+    .footer .download,
+    .footer .contact,
+    .footer .social,
+    .footer .description {
+        margin: unset;
+    }
+}
